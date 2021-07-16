@@ -23,7 +23,7 @@
 					</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="#">Home</a></li>
+							<li><a href="#home">Home</a></li>
 							<li>
 								<a href="#about">About</a>
 								<!-- <ul>
@@ -41,9 +41,10 @@
 									</li>
 								</ul>-->
 							</li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#" class="button primary">Hire us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="./elements.html">Learn More</a></li>
+							<li><a href="#hire" class="button primary">Hire us</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -126,7 +127,7 @@
 
 			<!-- Four -->
 				<section id="four" class="wrapper style1 special fade-up">
-					<div class="container">
+					<div id="services" class="container">
 						<header class="major">
 							<h2>Our Services</h2>
 							<p>At Basmado Car Tracking Limited the safety of your car is our utmost priority!</p>
@@ -175,18 +176,40 @@
 
 			<!-- Five -->
 				<section id="five" class="wrapper style2 special fade">
-					<div class="container">
+					<div id="contact" class="container">
 						<header>
 							<!-- <h2>Get in touch with us</h2> -->
 							<p><i class="fa fa-address-book" aria-hidden="true"></i>12 Ola Ayeni Street, Off Medical Road Computer Village, Ikeja Lagos </p>
 							<p><i class="fa fa-phone-square" aria-hidden=""></i>+234 80 351 17 645</p>
 						</header>
-						<form method="post" action="contact.php" class="cta">
+						<div id="hire">
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="5"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><a href="" class="button submit">Send Message</a></li>
+								</ul>
+							</form>
+						</div>
+						
+						<!-- <form method="post" action="contact.php" class="cta">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
 								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
 							</div>
-						</form>
+						</form> -->
 					</div>
 				</section>
 
@@ -195,28 +218,28 @@
 					<div>
 						<div class="footer-desc">
 								<ul class="footer-items">
-									<li><a href=""></a><strong>Home</strong></li>
-									<li><a href=""><strong>About</strong></a></li>
-									<li><a href=""><strong>Services</strong></a></li>
-									<li>Geo-fencing</li>
-									<li>Sms Engine control</li>
-									<li>Voice Monitoring</li>
-									<li>Live map location</li>
-									<li>Fleet Management</li>
-									<li>Tech Support</li>
-									<li><a href=""><strong>Contact</strong></a></li>
-									<li><a href=""><strong>Hire Us</strong></a></li>
+									<li class="footer-links"><strong>Home</strong></li>
+									<li class="footer-links"><strong>About</strong></li>
+									<li class="footer-links"><strong>Services</strong></li>
+									<li class="footer-links">Geo-fencing</li>
+									<li class="footer-links">Sms Engine control</li>
+									<li class="footer-links">Voice Monitoring</li>
+									<li class="footer-links">Live map location</li>
+									<li class="footer-links">Fleet Management</li>
+									<li class="footer-links">Tech Support</li>
+									<li class="footer-links"><strong>Contact</strong></li>
+									<li class="footer-links"><strong>Hire Us</strong></li>
 								</ul>
 						</div>
 					</div>
 					<div>
 						<ul class="icons">
 						<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/BasmadoTrackltd/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<!-- <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.instagram.com/basmadotrackltd/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<!-- <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto:basmadotracklimited@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Basmado Track Limited. All rights reserved.</li>
